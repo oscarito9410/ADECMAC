@@ -1,0 +1,120 @@
+html,
+body {
+    height: 100%;
+}
+
+.glyphicon
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon
+{
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a
+{
+    color:#555;
+}
+
+.panel ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.news-item
+{
+    padding:4px 4px;
+    margin:0px;
+    border-bottom:1px dotted #555; 
+}
+
+.carousel {
+    height: 50%;
+    margin-top: -20px;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.line-separator{
+
+height:1px;
+
+background:#717171;
+
+border-bottom:1px solid #313030;
+
+}
+.table-responsive{
+    
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    
+    
+}
+.demo2 li:after{
+        display:block;
+        padding: 20px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.item:nth-child(1) {
+    background-image: url(../img/002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:nth-child(2) {
+    background-image: url(../img/003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:nth-child(3) {
+    background-image: url(../img/004.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer.page-footer {
+    margin-top: 0;
+    background-image:url(../img/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.fb-bg {
+background-color: #3B5998;
+}
+.tw-bg {
+background-color: #55ACEE;
+}
+.gplus-bg {
+background-color: #DD4B39;
+}
+
+footer.page-footer a {
+line-height: 25px;
+}
+
+footer.page-footer a {
+color: #fff;
+font-size: 15px;
+}
