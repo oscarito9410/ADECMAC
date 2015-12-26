@@ -62,6 +62,8 @@ border-bottom:1px solid #313030;
     
     
 }
+.nav-tabs { min-width: 600px; }
+.nav-tabs-responsive { overflow: auto; }
 .demo2 li:after{
         display:block;
         padding: 20px;

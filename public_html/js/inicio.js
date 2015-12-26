@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	$("#demo3").bootstrapNews({
             newsPerPage: 3,
-            autoplay: true,
+            autoplay: true
         });
+        $('.responsive-calendar').responsiveCalendar();
         wow = new WOW(
                       {
                       boxClass:     'wow',      // default
@@ -13,7 +14,7 @@ $(document).ready(function(){
                     }
                     )
                     wow.init();
-                    
+         
         $('.carousel').carousel();
         
 /*

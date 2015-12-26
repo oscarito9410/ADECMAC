@@ -23,6 +23,8 @@
   <link href="css/style.css" rel="stylesheet">
 
   <link href="css/animate.css" rel="stylesheet">
+  
+  <link href="css/responsive-calendar.css" rel ="stylesheet">  
 </head>
 
 <body>
@@ -263,11 +265,14 @@
         <div class="card hoverable wow fadeInLeftBig">
           
           <div class="card-title">
-                <ul class="nav nav-tabs">
-                <li class="active opciones"><a data-toggle="tab" href="#home">AMISTOSOS</a></li>
-                <li class="opciones"><a data-toggle="tab" href="#menu1">CALENDARIO</a></li>
-                <li class="opciones"><a data-toggle="tab" href="#menu2">POSICIONES</a></li>
+              <div class="nav-tabs-responsive">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active opciones"><a data-toggle="tab" href="#home"><h5 class="h5-responsive">AMISTOSOS</h5></a></li>
+                    <li class="opciones"><a data-toggle="tab" href="#menu1"><h5 class="h5-responsive">CALENDARIO</h5></a></li>
+                    <li class="opciones"><a data-toggle="tab" href="#menu2"><h5 class="h5-responsive">POSICIONES</h5></a></li>
                 </ul>
+              </div>
+                
           </div>
           
             <div class="card-content">
@@ -476,8 +481,27 @@
                   
               </div>
               <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Some content in menu 1.</p>
+                <!-- Responsive calendar - START -->
+                <div class="responsive-calendar">
+                  <div class="controls">
+                      <a class="pull-left" data-go="prev"><div class="btn"><i class="icon-chevron-left"></i></div></a>
+                      <h4><span data-head-year></span> <span data-head-month></span></h4>
+                      <a class="pull-right" data-go="next"><div class="btn"><i class="icon-chevron-right"></i></div></a>
+                  </div><hr/>
+                  <div class="day-headers">
+                    <div class="day header">Mon</div>
+                    <div class="day header">Tue</div>
+                    <div class="day header">Wed</div>
+                    <div class="day header">Thu</div>
+                    <div class="day header">Fri</div>
+                    <div class="day header">Sat</div>
+                    <div class="day header">Sun</div>
+                  </div>
+                  <div class="days" data-group="days">
+                    <!-- the place where days will be generated -->
+                  </div>
+                </div>
+                <!-- Responsive calendar - END -->
               </div>
               <div id="menu2" class="tab-pane fade">
                 <h3>Menu 2</h3>
@@ -557,7 +581,7 @@
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   
-
+  <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
   
   <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js"></script>
   
