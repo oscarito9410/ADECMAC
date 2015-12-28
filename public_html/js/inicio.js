@@ -3,7 +3,35 @@ $(document).ready(function(){
             newsPerPage: 3,
             autoplay: true
         });
-        $('.responsive-calendar').responsiveCalendar();
+       $(".responsive-calendar").responsiveCalendar({
+        time: '2016-01',
+        events: {
+          "2016-01-30": {"number": 5, "badgeClass": "badge-warning", "url": "http://w3widgets.com/responsive-calendar","partidos":[{"dia":"perro"}]},
+          "2016-01-26": {"number": 1, "badgeClass": "badge-warning", "url": "http://w3widgets.com"}, 
+          "2016-01-03": {"number": 1, "badgeClass": "badge-error"}, 
+          "2016-01-12": {}},
+      
+        onActiveDayClick: function(events) {
+                
+            var thisDayEvent, key;
+            key = $(this).data('year')+'-'+addLeadingZero($(this).data('month') )+'-'+addLeadingZero( $(this).data('day') );
+            thisDayEvent = events[key];
+            alert(thisDayEvent.partidos.dia);
+         },
+      
+        translateMonths:[
+            "Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre" 
+        ]
+    });
+    
+     function addLeadingZero(num) {
+        if (num < 10) {
+          return "0" + num;
+        } else {
+          return "" + num;
+        }
+      }
+  
         wow = new WOW(
                       {
                       boxClass:     'wow',      // default
