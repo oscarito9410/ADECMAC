@@ -44,6 +44,13 @@ $(document).ready(function(){
                     wow.init();
          
         $('.carousel').carousel();
+        $(".dropdown-menu a").on("click",function(){
+            
+                    $("#btnDropdown").html($(this).html() + '<span class="caret"></span>');
+            
+        });
+        $("#btnDropdown");
+        getTablaPosicion();
         
 /*
          $("#amistosos").each(function(i){

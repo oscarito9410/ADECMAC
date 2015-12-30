@@ -293,7 +293,7 @@
                               
                             <div class="media">
                             <div class="media-left">
-                                <img class="media-object img-rounded" src="equipos/VILLARREAL.jpg" alt=""/>
+                                <img class="media-object img-rounded" src="equipos/1A/VILLARREAL.jpg" alt=""/>
                             </div>
                             <div class="media-body">
                                 <span class="media-heading">VILLAREAL</span>                    
@@ -320,7 +320,7 @@
                             
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object img-rounded" src="equipos/REAL_SOCIEDAD.png" alt=""/>                             
+                                <img class="media-object img-rounded" src="equipos/2A/REAL_SOCIEDAD.jpg" alt=""/>                             
                             </div>
                             <div class="media-body">
                                 <span class="media-heading">REAL SOCIEDAD</span>                    
@@ -336,7 +336,7 @@
                           <td class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object  img-rounded" src="equipos/BARCELONA.jpg" alt=""/>
+                                <img class="media-object  img-rounded" src="equipos/2A/BARCELONA.jpg" alt=""/>
                              
                             </div>
                             <div class="media-body">
@@ -362,7 +362,7 @@
                         <td class="col-md-4">   
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object  img-rounded" src="equipos/ANDALUCIA.png" alt="ANDALUCIA"/>                             
+                                <img class="media-object  img-rounded" src="equipos/2A/ANDALUCIA.jpg" alt="ANDALUCIA"/>                             
                             </div>
                             <div class="media-body">
                                 <span class="media-heading">ANDALUCIA</span>                    
@@ -378,7 +378,7 @@
                           <td class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object img-rounded" src="equipos/CABRA.png" alt=""/>
+                                <img class="media-object img-rounded" src="equipos/2A/ANDALUCIA.jpg" alt=""/>
                              
                             </div>
                             <div class="media-body">
@@ -407,7 +407,7 @@
                             
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object  img-rounded" src="equipos/CANARIAS.png" alt=""/>                             
+                                <img class="media-object  img-rounded" src="equipos/2A/CANARIAS.jpg" alt=""/>                             
                             </div>
                             <div class="media-body">
                                 <span class="media-heading">CANTABRIA</span>                    
@@ -423,7 +423,7 @@
                           <td class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object  img-rounded" src="equipos/GERONA.png" alt=""/>
+                                <img class="media-object  img-rounded" src="equipos/1A/GERONA.jpg" alt=""/>
                              
                             </div>
                             <div class="media-body">
@@ -452,7 +452,7 @@
                             
                             <div class="media">
                             <div class="media-left media-middle">
-                                <img class="media-object  img-rounded" src="equipos/SAHARA.png" alt=""/>                             
+                                <img class="media-object  img-rounded" src="equipos/1A/SAHARA.jpg" alt=""/>                             
                             </div>
                             <div class="media-body">
                                 <span class="media-heading">SAHARA</span>                    
@@ -499,23 +499,47 @@
                 <!-- Responsive calendar - END -->
               </div>
               <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Some content in menu 2.</p>
+               <div id="no-more-tables" class="table-responsive animated fadeIn">
+                <table id="posiciones" class="col-md-12 table-bordered table-striped table-condensed">
+                 <thead>
+                      <tr>
+                        <th>Equipo</th>
+                        <th>JJ</th>
+                        <th>G</th>
+                        <th>P</th>
+                        <th>E</th>
+                        <th>PTS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+               </div>
+                  <div class="container-fluid">
+                      <div class="row">
+                        <span class="label label-primary">JJ=Jugados</span>
+                        <span class="label label-primary">G=Ganados</span>
+                        <span class="label label-primary">E=Empatadoa</span>
+                        <span class="label label-primary">P=Perdidos</span>
+                      </div>
+                  </div>
               </div>
             </div>
             </div>
           
           <div class="card-action">
          
-            <button type="button" class="btn btn-default dropdown-button"  data-activates="dropdown1">Drop Me!</button>
-
-              <!-- Dropdown Structure -->
-              <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">three</a></li>
-              </ul>
+         <div class="dropup">
+            <button id="btnDropdown" class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true">
+              1a División <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="btnDropdown">
+              <li><a href="#">1a División</a></li>
+              <li><a href="#">2a División</a></li>
+              <li><a href="#">Femenil</a></li>
+            </ul>
+          </div>
 
           </div>
         </div>
@@ -588,6 +612,7 @@
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js"></script>
   <script type="text/javascript" src="js/inicio.js"></script>  
+  <script type="text/javascript" src="js/equipos.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
