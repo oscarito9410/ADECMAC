@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+        $(".tabbable.responsive").resptabs(); 
 	$("#demo3").bootstrapNews({
             newsPerPage: 3,
             autoplay: true
@@ -44,13 +46,14 @@ $(document).ready(function(){
                     wow.init();
          
         $('.carousel').carousel();
-        $(".dropdown-menu a").on("click",function(){
+        $(".dropdown-menu a").on("click",function(e){
             
                     $("#btnDropdown").html($(this).html() + '<span class="caret"></span>');
-            
+                    getTablaPosicion(varonialSJSON);
+                    e.preventDefault();
         });
         $("#btnDropdown");
-        getTablaPosicion();
+        getTablaPosicion(varonilPJson)
         
 /*
          $("#amistosos").each(function(i){

@@ -7,12 +7,6 @@
  */
      
 
-
-
-   function getTablaPosicion()
-   {
-        
-       
          var varonilPJson='[{"nombre":"Almagro","img":"equipos/1A/ALMAGRO.jpg"},\n\
                         {"nombre":"Cabra","img":"equipos/1A/CABRA.jpg"},\n\
                         {"nombre":"Corrales de Balbuena","img":"equipos/1A/CORRALES DE BALBUENA.jpg"},\n\
@@ -29,10 +23,33 @@
                         {"nombre":"Toledo","img":"equipos/1A/TOLEDO.jpg"},\n\
                         {"nombre":"Vallekas","img":"equipos/1A/VALLEKAS.jpg"},\n\
                         {"nombre":"Villareal","img":"equipos/1A/VILLARREAL.jpg"}]';
+
        
-        var equipos=JSON.parse(varonilPJson);
+      var varonialSJSON='[{"nombre":"Alcorcon","img":"equipos/2A/ALCORCON.jpg"},\n\
+                          {"nombre":"Almeria","img":"equipos/2A/ALMERIA.jpg"},\n\
+                         {"nombre":"Andalucia","img":"equipos/2A/ANDALUCIA.jpg"},\n\
+                         {"nombre":"Atotxa","img":"equipos/2A/ATOTCHA.jpg"},\n\
+                         {"nombre":"Barcelona","img":"equipos/2A/Barcelona.jpg"},\n\
+                         {"nombre":"Canarias","img":"equipos/2A/CANARIAS.jpg"},\n\
+                         {"nombre":"Cantabria","img":"equipos/2A/Barcelona.jpg"},\n\
+                         {"nombre":"Chinchon","img":"equipos/2A/CHINCHON.jpg"},\n\
+                         {"nombre":"Nueva españa","img":"equipos/2A/NUEVASPAIN.jpg"},\n\
+                         {"nombre":"Pamplona","img":"equipos/2A/PAMPLONA.jpg"},\n\
+                         {"nombre":"Real Socieda","img":"equipos/2A/REAL_SOCIEDAD.jpg"},\n\
+                         {"nombre":"San sebastian","img":"equipos/2A/SAN_SEBASTIAN.jpg"},\n\
+                         {"nombre":"Triana","img":"equipos/2A/Triana.jpg"}]';
+
+   function getTablaPosicion(json)
+   {
+        
+       
+       
+        var equipos=JSON.parse(json);
+        
         
         var jugados=15;
+        
+         $("#posiciones tbody").html("");
         
         for(var j=0;j<equipos.length;j++){
           
@@ -62,6 +79,8 @@
              
          }
           pts=(ganados*3)+empatados;
+         
+          
            var columna=  '<tr><td data-title="Equipo" class="col-md-4">'+  
                             '<div  class="media">'+
                             '<div class="media-left">'+

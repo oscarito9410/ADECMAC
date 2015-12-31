@@ -24,7 +24,9 @@
 
   <link href="css/animate.css" rel="stylesheet">
   
-  <link href="css/responsive-calendar.css" rel ="stylesheet">  
+  <link href="css/responsive-calendar.css" rel="stylesheet">  
+  
+  <link href="css/responsive-tabs.css" rel="stylesheet">
 </head>
 
 <body>
@@ -264,12 +266,12 @@
       <div class="col-md-8">
         <div class="card hoverable wow fadeInLeftBig">
           
-          <div class="card-title">
+          <div class="tabbable responsive">
              
                 <ul class="nav nav-tabs">
-                    <li class="active opciones"><a data-toggle="tab" href="#home"><h5 class="h5-responsive">AMISTOSOS</h5></a></li>
-                    <li class="opciones"><a data-toggle="tab" href="#menu1"><h5 class="h5-responsive">CALENDARIO</h5></a></li>
-                    <li class="opciones"><a data-toggle="tab" href="#menu2"><h5 class="h5-responsive">POSICIONES</h5></a></li>
+                    <li class="active opciones"><a data-toggle="tab" href="#home">AMISTOSOS</a></li>
+                    <li class="opciones"><a data-toggle="tab" href="#menu1">CALENDARIO</a></li>
+                    <li class="opciones"><a data-toggle="tab" href="#menu2">POSICIONES</a></li>
                 </ul>     
                 
           </div>
@@ -278,7 +280,7 @@
               <div class="tab-content">
               <div id="home" class="tab-pane fade in active">
                 
-                  <div class="table-responsive animated fadeIn">
+                  <div id="no-more-tables2" class="table-responsive animated fadeIn">
                     <table class="table table-condensed">
                     <thead>
                       <tr>
@@ -289,7 +291,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                          <td class="col-md-4">
+                          <td data-title="Local" class="col-md-4">
                               
                             <div class="media">
                             <div class="media-left">
@@ -309,12 +311,12 @@
                             <div class="media-left media-middle">
                               
                             </div>
-                            <div class="media-body">
+                            <div data-title="Resultado" class="media-body">
                                 <span class="media-heading">4-1</span>                    
                             </div>
                           </div>
                           </td> 
-                        <td class="col-md-4">     
+                        <td data-title="Visitante" class="col-md-4">     
              
                          <div class="media">
                             
@@ -333,7 +335,7 @@
                        
                       </tr>
                       <tr>
-                          <td class="col-md-4">
+                          <td data-title="Local" class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
                                 <img class="media-object  img-rounded" src="equipos/2A/BARCELONA.jpg" alt=""/>
@@ -354,12 +356,12 @@
                                  
                              
                             </div>
-                            <div class="media-body">
+                            <div data-title="Resultado" class="media-body">
                                 <span class="media-heading">7-1</span>                    
                             </div>
                           </div>
                           </td> 
-                        <td class="col-md-4">   
+                        <td data-title="Visitante" class="col-md-4">   
                             <div class="media">
                             <div class="media-left media-middle">
                                 <img class="media-object  img-rounded" src="equipos/2A/ANDALUCIA.jpg" alt="ANDALUCIA"/>                             
@@ -375,7 +377,7 @@
                        
                       </tr>
                       <tr>
-                          <td class="col-md-4">
+                          <td data-title="Local" class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
                                 <img class="media-object img-rounded" src="equipos/2A/ANDALUCIA.jpg" alt=""/>
@@ -396,7 +398,7 @@
                                  
                              
                             </div>
-                            <div class="media-body">
+                            <div data-title="Resultado" class="media-body">
                                 <span class="media-heading">6-7</span>                    
                             </div>
                           </div>
@@ -409,7 +411,7 @@
                             <div class="media-left media-middle">
                                 <img class="media-object  img-rounded" src="equipos/2A/CANARIAS.jpg" alt=""/>                             
                             </div>
-                            <div class="media-body">
+                            <div data-title="Visitante" class="media-body">
                                 <span class="media-heading">CANTABRIA</span>                    
                             </div>
                                 
@@ -420,7 +422,7 @@
                        
                       </tr>
                        <tr>
-                          <td class="col-md-4">
+                          <td data-title="Local" class="col-md-4">
                             <div class="media">
                             <div class="media-left media-middle">
                                 <img class="media-object  img-rounded" src="equipos/1A/GERONA.jpg" alt=""/>
@@ -441,12 +443,12 @@
                                  
                              
                             </div>
-                            <div class="media-body">
+                            <div data-title="Resultado" class="media-body">
                                 <span class="media-heading">2-1</span>                    
                             </div>
                           </div>
                           </td> 
-                        <td class="col-md-4">     
+                        <td data-title="Visitante" class="col-md-4">     
              
                          <div class="media">
                             
@@ -528,8 +530,7 @@
             </div>
             </div>
           
-          <div class="card-action">
-         
+       <div class="card-action">
          <div class="dropup">
             <button id="btnDropdown" class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true">
               1a División <span class="caret"></span>
@@ -557,7 +558,7 @@
 
 
   <!-- Footer info-color darken-1 -->
-  <footer class="page-footer" if="footer">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-md-offset-1">
