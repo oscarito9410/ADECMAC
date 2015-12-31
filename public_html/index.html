@@ -144,7 +144,6 @@
       
  
       <!-- /.col-md-4 -->
-      
     <div class="col-md-4  wow fadeInLeftBig">
             <div class="panel panel-default hoverable z-depth-1">
             <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>AVISOS IMPORTANTES</b></div>
@@ -262,25 +261,17 @@
             </div>
 
       
-      <!-- /.col-md-4 -->
-      <div class="col-md-8">
-        <div class="card hoverable wow fadeInLeftBig">
-          
-          <div class="tabbable responsive">
-             
-                <ul class="nav nav-tabs">
-                    <li class="active opciones"><a data-toggle="tab" href="#home">AMISTOSOS</a></li>
-                    <li class="opciones"><a data-toggle="tab" href="#menu1">CALENDARIO</a></li>
-                    <li class="opciones"><a data-toggle="tab" href="#menu2">POSICIONES</a></li>
+      <!-- /.col-md-8 -->
+   
+      <div class="col-sm-8 wow fadeInLeftBig">
+             <ul class="nav nav-tabs responsive-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">AMISTOSOS</a></li>
+                    <li><a data-toggle="tab" href="#menu1">CALENDARIO</a></li>
+                    <li><a data-toggle="tab" href="#menu2">POSICIONES</a></li>
                 </ul>     
-                
-          </div>
-          
-            <div class="card-content">
               <div class="tab-content">
-              <div id="home" class="tab-pane fade in active">
-                
-                  <div id="no-more-tables2" class="table-responsive animated fadeIn">
+              <div id="home" class="tab-pane active">
+                  <div id="no-more-tables2" class="table-responsive">
                     <table class="table table-condensed">
                     <thead>
                       <tr>
@@ -470,16 +461,10 @@
                   </table>
 
                   </div>  
-                
-                  
-                  
-                  
-                
-                  
               </div>
-              <div id="menu1" class="tab-pane fade">
+              <div id="menu1" class="tab-pane">
                 <!-- Responsive calendar - START -->
-                <div class="responsive-calendar">
+                <div class="responsive-calendar animated fadeIn">
                   <div class="controls container-fluid">
                       <a class="pull-left" data-go="prev"><div class="btn-floating btn-primary btn-small waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></div></a>
                       <h4 class="h4-responsive verticalcenter text-center"><span data-head-year></span> <span data-head-month></span></h4>
@@ -500,7 +485,7 @@
                 </div>
                 <!-- Responsive calendar - END -->
               </div>
-              <div id="menu2" class="tab-pane fade">
+              <div id="menu2" class="tab-pane">
                <div id="no-more-tables" class="table-responsive animated fadeIn">
                 <table id="posiciones" class="col-md-12 table-bordered table-striped table-condensed">
                  <thead>
@@ -529,8 +514,10 @@
               </div>
             </div>
             </div>
-          
-       <div class="card-action">
+          </div>
+          </div>
+  
+     <!--   <div class="card-action">
          <div class="dropup">
             <button id="btnDropdown" class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true">
               1a División <span class="caret"></span>
@@ -542,14 +529,14 @@
             </ul>
           </div>
 
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-    </div>
-    <!-- /.row -->
+          </div>-->
+        
+ 
+ 
+      
+    
 
-  </div>
+
   <!-- /.container -->
   
   <!--/. Page content -->
@@ -608,18 +595,19 @@
 
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/responsive-tabs.js"></script>
-  <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js"></script>
-  <script type="text/javascript" src="js/inicio.js"></script>  
-  <script type="text/javascript" src="js/equipos.js"></script>
-  <!-- Bootstrap core JavaScript -->
+   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
   <!-- Material Design Bootstrap -->
   <script type="text/javascript" src="js/mdb.js"></script>
 
+  <script type="text/javascript" src="js/jquery.bootstrap-responsive-tabs.js"></script>
+  <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js"></script>
+  <script type="text/javascript" src="js/inicio.js"></script>  
+  <script type="text/javascript" src="js/equipos.js"></script>
+ 
 
 </body>
 

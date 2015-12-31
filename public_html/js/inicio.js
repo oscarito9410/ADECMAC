@@ -1,14 +1,18 @@
 $(document).ready(function(){
     
-        $(".tabbable.responsive").resptabs(); 
-	$("#demo3").bootstrapNews({
+        $('.responsive-tabs').responsiveTabs({
+            accordionOn: ['xs', 'sm']
+          });
+          $("#demo3").bootstrapNews({
             newsPerPage: 3,
             autoplay: true
         });
        $(".responsive-calendar").responsiveCalendar({
         time: '2016-01',
         events: {
-          "2016-01-30": {"number": 5, "badgeClass": "badge-warning", "url": "http://w3widgets.com/responsive-calendar","partidos":[{"dia":"perro"}]},
+          "2016-01-14": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMO PAGO DE FICHA VARONILES $12,500"}]},  
+          "2016-01-07": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMO PAGO TORNEO 2016"}]},  
+          "2016-01-14": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMA JORNADA SABATINA"}]},  
           "2016-01-26": {"number": 1, "badgeClass": "badge-warning", "url": "http://w3widgets.com"}, 
           "2016-01-03": {"number": 1, "badgeClass": "badge-error"}, 
           "2016-01-12": {}},
@@ -18,7 +22,12 @@ $(document).ready(function(){
             var thisDayEvent, key;
             key = $(this).data('year')+'-'+addLeadingZero($(this).data('month') )+'-'+addLeadingZero( $(this).data('day') );
             thisDayEvent = events[key];
-            alert(thisDayEvent.partidos.dia);
+            //alert(thisDayEvent.noticia[0].mensaje);
+            var a=$(this).parent().find("a")
+            a.attr("data-toggle","tooltip");
+            a.attr("title",thisDayEvent.noticia[0].mensaje);
+            a.tooltip("show");
+            
          },
       
         translateMonths:[
