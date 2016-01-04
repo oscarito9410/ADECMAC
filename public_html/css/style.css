@@ -55,10 +55,11 @@ background:#717171;
 border-bottom:1px solid #313030;
 
 }
-.table-responsive{
+
+.navbar-brand>img{
     
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
+    -webkit-animation-delay:2s;
+    -moz-animation-delay: 2s;
     
     
 }
