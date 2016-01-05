@@ -49,7 +49,7 @@
         
         var jugados=15;
         
-         $("#posiciones tbody").html("");
+        $("#posiciones tbody").html("");
         
         for(var j=0;j<equipos.length;j++){
           

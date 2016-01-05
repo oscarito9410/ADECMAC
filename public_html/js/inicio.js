@@ -1,9 +1,26 @@
 $(document).ready(function(){
     
-        $('.responsive-tabs').responsiveTabs({
+      wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    );
+                    wow.init();
+        
+        if(isMobile.any())
+        {
+            $("#noticiasContenedor").addClass("wow fadeInLeftBig");
+            $("#opcionesBarra").addClass("wow fadeInLeftBig");
+        }
+        
+       $('.responsive-tabs').responsiveTabs({
             accordionOn: ['xs', 'sm']
           });
-          $("#demo3").bootstrapNews({
+        $("#noticiasBarra").bootstrapNews({
             newsPerPage: 3,
             autoplay: true
         });
@@ -12,10 +29,7 @@ $(document).ready(function(){
         events: {
           "2016-01-14": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMO PAGO DE FICHA VARONILES $12,500"}]},  
           "2016-01-07": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMO PAGO TORNEO 2016"}]},  
-          "2016-01-14": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMA JORNADA SABATINA"}]},  
-          "2016-01-26": {"number": 1, "badgeClass": "badge-warning", "url": "http://w3widgets.com"}, 
-          "2016-01-03": {"number": 1, "badgeClass": "badge-error"}, 
-          "2016-01-12": {}},
+          "2016-01-14": {"number": 1, "badgeClass": "label-warning","noticia":[{"mensaje":"PRÓXIMA JORNADA SABATINA"}]},},
       
         onActiveDayClick: function(events) {
                 
@@ -43,49 +57,50 @@ $(document).ready(function(){
         }
       }
   
-        wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       true,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init();
-         
+    
         $('.carousel').carousel();
         $(".dropdown-menu a").on("click",function(e){
             
-                    $("#btnDropdown").html($(this).html() + '<span class="caret"></span>');
-                    getTablaPosicion(varonialSJSON);
                     e.preventDefault();
+                    $("#btnDropdown").html($(this).html() + '<span class="caret"></span>');
+                    
+                    if($(this).attr("id")=="1a"){
+                         getTablaPosicion(varonilPJson);
+                    }
+                    else if($(this).attr("id")=="2a"){
+                        
+                        getTablaPosicion(varonialSJSON);
+                    }
+                    else
+                    {
+                        alert($(this).attr("id"));
+                    }
+            
+                    
+                    
         });
         $("#btnDropdown");
-        getTablaPosicion(varonilPJson)
-        
-/*
-         $("#amistosos").each(function(i){
-                        
-                        var list=$(this).find("li.list-group-item");
-                        $((list).get().reverse()).each(function(){
-                               var t=$(this);
-                                       
-                                   setTimeout(function(){ 
-                                    
-                                    t.addClass("animated fadeInUpBig");
-                                    },(i+1) * 5000);
-                            
-                        });
-        
-                    
-        $("li.opciones").click(function(){
-                    
-                   
-                        
-                        
-                    });
-            
-        })
-  */     
+        getTablaPosicion(varonilPJson);
+
  });
+ 
+ var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};

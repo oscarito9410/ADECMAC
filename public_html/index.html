@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Material Design Bootstrap Template</title>
+  <title>ADECMAC</title>
 
   <!-- Material Design Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -31,7 +31,7 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar z-depth-2 info-color">
+  <nav class="navbar z-depth-2 stylish-color-dark">
     <div class="container ">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -40,40 +40,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand waves-effect waves-light" href="#">MDBootstrap</a>
+           <a class="navbar-brand" href="#">
+               <img class="img-responsive animated bounce" width="80" height="80" alt="" src="img/logo.png">
+          </a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="#products" class="waves-effect waves-light">Products <span class="sr-only">(current)</span></a>
+            <li><a href="faq.html" class="waves-effect waves-light">FAQ <span class="sr-only">(current)</span></a>
           </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">List (click to expand) <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="http://mdbootstrap.com/product/magic-portfolio-for-video-maker/">Video Maker</a>
-              </li>
-              <li><a href="http://mdbootstrap.com/material-design-for-bootstrap/">Material Design for Bootstrap</a>
-              </li>
-              <li><a href="http://mdbootstrap.com/product/magic-portfolio-for-creative-agency">Creative Agency</a>
-              </li>
-              <li><a href="http://mdbootstrap.com/product/magic-portfolio-photographer">Photographer Portfolio</a>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#footer">Footer</a>
-              </li>
-            </ul>
-          </li>
+          
         </ul>
-        <form class="navbar-form navbar-right waves-effect waves-light" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-        </form>
+    
       </div>
     </div>
   </nav>
-
-
   <!-- carousel -->
   <div id="carousel-example-generic" class="carousel slide carousel-fade">
 
@@ -136,7 +117,6 @@
 
   </div>
   <!-- /.carousel -->
-
   <!-- Page content -->
   <div class="container page-content">
     <!-- Content Row -->
@@ -144,13 +124,13 @@
       
  
       <!-- /.col-md-4 -->
-    <div class="col-md-4  wow fadeInLeftBig">
+    <div class="col-md-4" id="noticiasContenedor">
             <div class="panel panel-default hoverable z-depth-1">
             <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>AVISOS IMPORTANTES</b></div>
             <div class="panel-body">
             <div class="row">
             <div class="col-xs-12">
-            <ul id="demo3">
+            <ul id="noticiasBarra">
             
                 
                  <li class="news-item">
@@ -263,13 +243,15 @@
       
       <!-- /.col-md-8 -->
    
-      <div class="col-sm-8 wow fadeInLeftBig">
+      <div class="col-sm-8" id="opcionesBarra">
+          <div class="card hoverable">
              <ul class="nav nav-tabs responsive-tabs">
                     <li class="active"><a data-toggle="tab" href="#home">AMISTOSOS</a></li>
                     <li><a data-toggle="tab" href="#menu1">CALENDARIO</a></li>
                     <li><a data-toggle="tab" href="#menu2">POSICIONES</a></li>
-                </ul>     
-              <div class="tab-content">
+                </ul>
+              <div class="card-content">
+                       <div class="tab-content">
               <div id="home" class="tab-pane active">
                   <div id="no-more-tables2" class="table-responsive">
                     <table class="table table-condensed">
@@ -464,7 +446,7 @@
               </div>
               <div id="menu1" class="tab-pane">
                 <!-- Responsive calendar - START -->
-                <div class="responsive-calendar animated fadeIn">
+                <div class="responsive-calendar animated zoomIn">
                   <div class="controls container-fluid">
                       <a class="pull-left" data-go="prev"><div class="btn-floating btn-primary btn-small waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></div></a>
                       <h4 class="h4-responsive verticalcenter text-center"><span data-head-year></span> <span data-head-month></span></h4>
@@ -486,7 +468,7 @@
                 <!-- Responsive calendar - END -->
               </div>
               <div id="menu2" class="tab-pane">
-               <div id="no-more-tables" class="table-responsive animated fadeIn">
+               <div id="no-more-tables" class="table-responsive animated zoomIn">
                 <table id="posiciones" class="col-md-12 table-bordered table-striped table-condensed">
                  <thead>
                       <tr>
@@ -512,43 +494,37 @@
                       </div>
                   </div>
               </div>
-            </div>
-            </div>
-          </div>
-          </div>
-  
-     <!--   <div class="card-action">
-         <div class="dropup">
-            <button id="btnDropdown" class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true">
-              1a División <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="btnDropdown">
-              <li><a href="#">1a División</a></li>
-              <li><a href="#">2a División</a></li>
-              <li><a href="#">Femenil</a></li>
-            </ul>
-          </div>
+            </div>  
+              </div>
+             <div class="card-action">
+                    <div class="dropup">
+                       <button id="btnDropdown" class="btn btn-default dropdown-toggle waves-effect waves-light" type="button"  data-toggle="dropdown" aria-haspopup="true">
+                         1a División <span class="caret"></span>
+                       </button>
+                       <ul class="dropdown-menu" aria-labelledby="btnDropdown">
+                           <li><a href="#" id="1a">1a División</a></li>
+                         <li><a href="#" id="2a">2a División</a></li>
+                         <li><a href="#" id="3a">Femenil</a></li>
+                       </ul>
+                     </div>
 
-          </div>-->
-        
- 
- 
-      
-    
-
-
+                 </div>
+              
+          </div>
+          
+         
+      </div>
+       
+      </div>
+       
+     </div>
   <!-- /.container -->
-  
   <!--/. Page content -->
-
-
-
-
   <!-- Footer info-color darken-1 -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-3 col-md-offset-1 wow fadeIn">
           <p class="white-text center-on-small-only">GET STARTED</p>
           <p class="white-text center-on-small-only">Register for free and start to create amazing things.</p>
           <a href="http://mdbootstrap.com/getting-started/" class="btn btn-danger waves-effect waves-light">Get started!</a>
@@ -556,7 +532,7 @@
         </div>
         <hr class="hidden-lg hidden-md">
 
-        <div class="col-md-2">
+        <div class="col-md-2 wow fadeIn">
           <p class="white-text center-on-small-only">USEFUL LINKS</p>
           <ul>
             <li><a href="#" data-toggle="modal" data-target="#myModal" class="grey-text text-lighten-3" href="#!">Contact us</a>
@@ -573,7 +549,7 @@
         </div>
         <hr class="hidden-lg hidden-md">
 
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center wow bounceInDown">
           <p class="white-text text-center"> SOCIAL MEDIA</p>
           <a target="_blank" href="https://www.facebook.com/mdbootstrap" class="btn-floating btn-large fb-bg waves-effect waves-light"><i class="fa fa-facebook"> </i></a>
           <a target="_blank" href="https://twitter.com/MDBootstrap" class="btn-floating btn-large tw-bg waves-effect waves-light"><i class="fa fa-twitter"> </i></a>
@@ -581,31 +557,25 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright wow fadeIn">
       <div class="container">
         <div class="col-md-10 col-md-offset-1"> © 2015 Copyright <a href="http://www.MDBootstrap.com">MDBootstrap.com </a>
         </div>
       </div>
     </div>
   </footer>
-
-
-
   <!-- SCRIPTS -->
-
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/inicio.js"></script>  
+  <script type="text/javascript" src="js/wow.min.js"></script>
    <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
   <!-- Material Design Bootstrap -->
   <script type="text/javascript" src="js/mdb.js"></script>
-
   <script type="text/javascript" src="js/jquery.bootstrap-responsive-tabs.js"></script>
   <script type="text/javascript" src="js/responsive-calendar.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js"></script>
-  <script type="text/javascript" src="js/inicio.js"></script>  
   <script type="text/javascript" src="js/equipos.js"></script>
  
 
